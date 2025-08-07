@@ -1,0 +1,15 @@
+/workspaces/ueoop/OOPConsole/bin/Debug/net8.0/OOPConsole
+/workspaces/ueoop/OOPConsole/bin/Debug/net8.0/OOPConsole.deps.json
+/workspaces/ueoop/OOPConsole/bin/Debug/net8.0/OOPConsole.runtimeconfig.json
+/workspaces/ueoop/OOPConsole/bin/Debug/net8.0/OOPConsole.dll
+/workspaces/ueoop/OOPConsole/bin/Debug/net8.0/OOPConsole.pdb
+/workspaces/ueoop/OOPConsole/obj/Debug/net8.0/OOPConsole.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/ueoop/OOPConsole/obj/Debug/net8.0/OOPConsole.AssemblyInfoInputs.cache
+/workspaces/ueoop/OOPConsole/obj/Debug/net8.0/OOPConsole.AssemblyInfo.cs
+/workspaces/ueoop/OOPConsole/obj/Debug/net8.0/OOPConsole.csproj.CoreCompileInputs.cache
+/workspaces/ueoop/OOPConsole/obj/Debug/net8.0/OOPConsole.sourcelink.json
+/workspaces/ueoop/OOPConsole/obj/Debug/net8.0/OOPConsole.dll
+/workspaces/ueoop/OOPConsole/obj/Debug/net8.0/refint/OOPConsole.dll
+/workspaces/ueoop/OOPConsole/obj/Debug/net8.0/OOPConsole.pdb
+/workspaces/ueoop/OOPConsole/obj/Debug/net8.0/OOPConsole.genruntimeconfig.cache
+/workspaces/ueoop/OOPConsole/obj/Debug/net8.0/ref/OOPConsole.dll
