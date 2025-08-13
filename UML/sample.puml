@@ -1,0 +1,19 @@
+@startuml
+interface Item
+
+Item <|-- Toy
+Item <|-- Tool
+Item <|-- Bread
+
+class ShoppingCart {
+    +List<item> items
+    
+    +void addItem(Item item)
+    #void removeItem(Item item)
+    -Item getItem(int index)
+    +int size()
+}
+
+ShoppingCart o-- Item
+
+@enduml
