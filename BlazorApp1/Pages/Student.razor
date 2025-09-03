@@ -1,0 +1,22 @@
+@page "/students"
+@code {
+    string studentName = "";
+    List<string> students = new List<string>();
+    void AddStudent()
+    {
+        if (!string.IsNullOrWhiteSpace(studentName))
+        {
+            students.Add(studentName);
+            studentName = "";
+        }
+    }
+}
+<input @bind="studentName" placeholder="Enter student name" />
+<button @onclick="AddStudent">Add</button>
+
+<ul>
+    @foreach (var s in students)
+    {
+        <li>@s</li>
+    }
+</ul>

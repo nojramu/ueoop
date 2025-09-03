@@ -1,0 +1,12 @@
+/* Home.razor.css - Component-specific styles */
+p {
+    width: 500px;
+    margin: auto;
+    background-color: lightblue;
+}
+
+.table-container {
+    border: 2px solid #444;
+    border-radius: 8px;
+    padding: 10px;
+}

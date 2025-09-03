@@ -1,0 +1,56 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<!-- Header -->
+<h1>Header 1</h1>
+<h2>Header 2</h2>
+<h3>Header 3</h3>
+<h4>Header 4</h4>
+<h5>Header 5</h5>
+<h6>Header 6</h6>
+<br>
+<img src="https://images.stockcake.com/public/9/0/0/900ca585-62ce-44f5-8345-85faaa60a0b0_large/amused-monkey-face-stockcake.jpg" alt="Happy Monkey" />
+<br>
+<p align="justify"><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt
+<br> consectetur, nisi nisl aliquam eros, eget facilisis enim erat nec enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam dictum, enim ac pretium cursus, sapien erat cursus enim, nec dictum enim enim nec enim. Suspendisse potenti. Etiam euismod, <i>enim ac pretium cursus, sapien erat cursus enim, nec</i>dictum enim enim nec enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+</p>
+
+<!--Table-->
+<div class="table-container">
+    <table border="1">
+        <tr>
+            <th width="100px">Name</th>
+            <td width="100px">Value</td>
+        </tr>
+        <tr>
+            <td>Day</td><td>@DateTime.Now.Day</td>
+        </tr>
+        <tr>
+            <td>Hour</td><td>@DateTime.Now.Hour</td>
+        </tr>
+        <tr>
+            <td>Minute</td><td>@DateTime.Now.Minute</td>
+        </tr>
+        <tr>
+            <td>Second</td><td>@DateTime.Now.Second</td>
+        </tr>
+    </table>
+</div>
+<br>
+<!--C# Code Block-->
+@{
+    var txt = "";
+    if(DateTime.Now.Hour > 12){
+        txt = "Good Afternoon";
+    }
+    else{
+        txt = "Good Morning";
+    }
+}
+<p class="table-container">@txt</p>
+
+<br>
+<footer>
+    <p>Footer content goes here</p>
+</footer>
