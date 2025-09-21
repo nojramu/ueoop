@@ -1,43 +1,43 @@
 {
   "Files": [
     {
-      "Id": "/workspaces/ueoop/BlazorApp2/bin/Debug/net8.0/wwwroot/_framework/blazor.webassembly.js",
+      "Id": "/home/runner/work/ueoop/ueoop/BlazorApp2/bin/Debug/net8.0/wwwroot/_framework/blazor.webassembly.js",
       "PackagePath": "staticwebassets/_framework/blazor.webassembly.js"
     },
     {
-      "Id": "/workspaces/ueoop/BlazorApp2/obj/Debug/net8.0/compressed/ut30b7ux25.gz",
+      "Id": "/home/runner/work/ueoop/ueoop/BlazorApp2/obj/Debug/net8.0/compressed/m17cl6z7iv.gz",
       "PackagePath": "staticwebassets/_framework/blazor.webassembly.js.gz"
     },
     {
-      "Id": "/workspaces/ueoop/BlazorApp2/obj/Debug/net8.0/scopedcss/bundle/BlazorApp2.styles.css",
+      "Id": "/home/runner/work/ueoop/ueoop/BlazorApp2/obj/Debug/net8.0/scopedcss/bundle/BlazorApp2.styles.css",
       "PackagePath": "staticwebassets/BlazorApp2.styles.css"
     },
     {
-      "Id": "/workspaces/ueoop/BlazorApp2/wwwroot/css/app.css",
+      "Id": "/home/runner/work/ueoop/ueoop/BlazorApp2/wwwroot/css/app.css",
       "PackagePath": "staticwebassets/css/app.css"
     },
     {
-      "Id": "/workspaces/ueoop/BlazorApp2/wwwroot/css/bootstrap/bootstrap.min.css",
+      "Id": "/home/runner/work/ueoop/ueoop/BlazorApp2/wwwroot/css/bootstrap/bootstrap.min.css",
       "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
     },
     {
-      "Id": "/workspaces/ueoop/BlazorApp2/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "Id": "/home/runner/work/ueoop/ueoop/BlazorApp2/wwwroot/css/bootstrap/bootstrap.min.css.map",
       "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Id": "/workspaces/ueoop/BlazorApp2/wwwroot/favicon.png",
+      "Id": "/home/runner/work/ueoop/ueoop/BlazorApp2/wwwroot/favicon.png",
       "PackagePath": "staticwebassets/favicon.png"
     },
     {
-      "Id": "/workspaces/ueoop/BlazorApp2/wwwroot/icon-192.png",
+      "Id": "/home/runner/work/ueoop/ueoop/BlazorApp2/wwwroot/icon-192.png",
       "PackagePath": "staticwebassets/icon-192.png"
     },
     {
-      "Id": "/workspaces/ueoop/BlazorApp2/wwwroot/index.html",
+      "Id": "/home/runner/work/ueoop/ueoop/BlazorApp2/wwwroot/index.html",
       "PackagePath": "staticwebassets/index.html"
     },
     {
-      "Id": "/workspaces/ueoop/BlazorApp2/wwwroot/sample-data/weather.json",
+      "Id": "/home/runner/work/ueoop/ueoop/BlazorApp2/wwwroot/sample-data/weather.json",
       "PackagePath": "staticwebassets/sample-data/weather.json"
     },
     {
