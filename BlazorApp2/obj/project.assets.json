@@ -333,13 +333,13 @@
           "lib/net8.0/Microsoft.JSInterop.WebAssembly.dll": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.18": {
+      "Microsoft.NET.ILLink.Tasks/8.0.19": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-      "Microsoft.NET.Sdk.WebAssembly.Pack/8.0.18": {
+      "Microsoft.NET.Sdk.WebAssembly.Pack/8.0.19": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.Sdk.WebAssembly.Pack.props": {},
@@ -691,13 +691,13 @@
           "lib/net8.0/Microsoft.JSInterop.WebAssembly.dll": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.18": {
+      "Microsoft.NET.ILLink.Tasks/8.0.19": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-      "Microsoft.NET.Sdk.WebAssembly.Pack/8.0.18": {
+      "Microsoft.NET.Sdk.WebAssembly.Pack/8.0.19": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.Sdk.WebAssembly.Pack.props": {},
@@ -1443,10 +1443,10 @@
         "microsoft.jsinterop.webassembly.nuspec"
       ]
     },
-    "Microsoft.NET.ILLink.Tasks/8.0.18": {
-      "sha512": "OiXqr2YIBEV9dsAWEtasK470ALyJ0VxJ9k4MotOxlWV6HeEgrJKYMW4HHj1OCCXvqE0/A25wEKPkpfiBARgDZA==",
+    "Microsoft.NET.ILLink.Tasks/8.0.19": {
+      "sha512": "IhHf+zeZiaE5EXRyxILd4qM+Hj9cxV3sa8MpzZgeEhpvaG3a1VEGF6UCaPFLO44Kua3JkLKluE0SWVamS50PlA==",
       "type": "package",
-      "path": "microsoft.net.illink.tasks/8.0.18",
+      "path": "microsoft.net.illink.tasks/8.0.19",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1460,7 +1460,7 @@
         "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.8.0.18.nupkg.sha512",
+        "microsoft.net.illink.tasks.8.0.19.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net472/ILLink.Tasks.dll",
         "tools/net472/ILLink.Tasks.dll.config",
@@ -1494,10 +1494,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.NET.Sdk.WebAssembly.Pack/8.0.18": {
-      "sha512": "SoVkRwFwnaX39J1uaI72PTilSJ6OoonIG+2VMpazEaAA9t+aJt2Caf49q76SYv3x9iU8hu1axlMWSkR9rt8nIg==",
+    "Microsoft.NET.Sdk.WebAssembly.Pack/8.0.19": {
+      "sha512": "Cm/sq4ET7XGU7jBSfSh+s+eV0faJ1RnErpImRYN7+d5loWISBwl22qsM6sn9StUWKJao+xGvF0IxgyPVnY20Vw==",
       "type": "package",
-      "path": "microsoft.net.sdk.webassembly.pack/8.0.18",
+      "path": "microsoft.net.sdk.webassembly.pack/8.0.19",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1525,7 +1525,7 @@
         "build/Microsoft.NET.Sdk.WebAssembly.Pack.props",
         "build/Microsoft.NET.Sdk.WebAssembly.Pack.targets",
         "build/Wasm.web.config",
-        "microsoft.net.sdk.webassembly.pack.8.0.18.nupkg.sha512",
+        "microsoft.net.sdk.webassembly.pack.8.0.19.nupkg.sha512",
         "microsoft.net.sdk.webassembly.pack.nuspec",
         "tools/net472/Microsoft.NET.Sdk.WebAssembly.Pack.Tasks.dll",
         "tools/net472/Microsoft.NET.WebAssembly.Webcil.dll",
@@ -1562,24 +1562,24 @@
     "net8.0": [
       "Microsoft.AspNetCore.Components.WebAssembly >= 8.0.18",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 8.0.18",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.18",
-      "Microsoft.NET.Sdk.WebAssembly.Pack >= 8.0.18"
+      "Microsoft.NET.ILLink.Tasks >= 8.0.19",
+      "Microsoft.NET.Sdk.WebAssembly.Pack >= 8.0.19"
     ]
   },
   "packageFolders": {
-    "/home/codespace/.nuget/packages/": {}
+    "/home/runner/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/ueoop/BlazorApp2/BlazorApp2.csproj",
+      "projectUniqueName": "/home/runner/work/ueoop/ueoop/BlazorApp2/BlazorApp2.csproj",
       "projectName": "BlazorApp2",
-      "projectPath": "/workspaces/ueoop/BlazorApp2/BlazorApp2.csproj",
-      "packagesPath": "/home/codespace/.nuget/packages/",
-      "outputPath": "/workspaces/ueoop/BlazorApp2/obj/",
+      "projectPath": "/home/runner/work/ueoop/ueoop/BlazorApp2/BlazorApp2.csproj",
+      "packagesPath": "/home/runner/.nuget/packages/",
+      "outputPath": "/home/runner/work/ueoop/ueoop/BlazorApp2/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/codespace/.nuget/NuGet/NuGet.Config"
+        "/home/runner/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1597,11 +1597,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1620,13 +1615,13 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.18, )",
+            "version": "[8.0.19, )",
             "autoReferenced": true
           },
           "Microsoft.NET.Sdk.WebAssembly.Pack": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.18, )",
+            "version": "[8.0.19, )",
             "autoReferenced": true
           }
         },
@@ -1644,7 +1639,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-            "version": "[8.0.18, 8.0.18]"
+            "version": "[8.0.19, 8.0.19]"
           }
         ],
         "frameworkReferences": {
@@ -1652,7 +1647,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.119/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

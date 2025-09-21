@@ -1030,3 +1030,13 @@
 /workspaces/ueoop/BlazorApp2/obj/Debug/net8.0/refint/BlazorApp2.dll
 /workspaces/ueoop/BlazorApp2/obj/Debug/net8.0/BlazorApp2.pdb
 /workspaces/ueoop/BlazorApp2/obj/Debug/net8.0/ref/BlazorApp2.dll
+/home/runner/work/ueoop/ueoop/BlazorApp2/obj/Debug/net8.0/BlazorApp2.csproj.AssemblyReference.cache
+/home/runner/work/ueoop/ueoop/BlazorApp2/obj/Debug/net8.0/BlazorApp2.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/ueoop/ueoop/BlazorApp2/obj/Debug/net8.0/BlazorApp2.AssemblyInfoInputs.cache
+/home/runner/work/ueoop/ueoop/BlazorApp2/obj/Debug/net8.0/BlazorApp2.AssemblyInfo.cs
+/home/runner/work/ueoop/ueoop/BlazorApp2/obj/Debug/net8.0/BlazorApp2.csproj.CoreCompileInputs.cache
+/home/runner/work/ueoop/ueoop/BlazorApp2/obj/Debug/net8.0/BlazorApp2.MvcApplicationPartsAssemblyInfo.cache
+/home/runner/work/ueoop/ueoop/BlazorApp2/obj/Debug/net8.0/BlazorApp2.sourcelink.json
+/home/runner/work/ueoop/ueoop/BlazorApp2/obj/Debug/net8.0/BlazorApp2.dll
+/home/runner/work/ueoop/ueoop/BlazorApp2/obj/Debug/net8.0/refint/BlazorApp2.dll
+/home/runner/work/ueoop/ueoop/BlazorApp2/obj/Debug/net8.0/BlazorApp2.pdb
