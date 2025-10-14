@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "wBRcdJUy48/uHvOmkPOkVOaz4x5uiUuryW6TAvIVSEs=",
+  "Source": "AuthSample",
+  "BasePath": "_content/AuthSample",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "AuthSample/wwwroot",
+      "Source": "AuthSample",
+      "ContentRoot": "/workspaces/ueoop/AuthSample/wwwroot/",
+      "BasePath": "_content/AuthSample",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/workspaces/ueoop/AuthSample/obj/Debug/net8.0/scopedcss/bundle/AuthSample.styles.css",
+      "SourceId": "AuthSample",
+      "SourceType": "Computed",
+      "ContentRoot": "/workspaces/ueoop/AuthSample/obj/Debug/net8.0/scopedcss/bundle/",
+      "BasePath": "_content/AuthSample",
+      "RelativePath": "AuthSample.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/workspaces/ueoop/AuthSample/obj/Debug/net8.0/scopedcss/bundle/AuthSample.styles.css"
+    },
+    {
+      "Identity": "/workspaces/ueoop/AuthSample/obj/Debug/net8.0/scopedcss/projectbundle/AuthSample.bundle.scp.css",
+      "SourceId": "AuthSample",
+      "SourceType": "Computed",
+      "ContentRoot": "/workspaces/ueoop/AuthSample/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "BasePath": "_content/AuthSample",
+      "RelativePath": "AuthSample.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/workspaces/ueoop/AuthSample/obj/Debug/net8.0/scopedcss/projectbundle/AuthSample.bundle.scp.css"
+    },
+    {
+      "Identity": "/workspaces/ueoop/AuthSample/wwwroot/app.css",
+      "SourceId": "AuthSample",
+      "SourceType": "Discovered",
+      "ContentRoot": "/workspaces/ueoop/AuthSample/wwwroot/",
+      "BasePath": "_content/AuthSample",
+      "RelativePath": "app.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/app.css"
+    }
+  ]
+}
