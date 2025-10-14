@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Authample.props" />
+</Project>
