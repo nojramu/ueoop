@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace BlazorSQLiteDemo.Data
+namespace Crudample.Data
 {
     public class AppDbContext : DbContext
     {

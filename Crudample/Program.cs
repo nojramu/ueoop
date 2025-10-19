@@ -1,5 +1,5 @@
 using Crudample.Components;
-using BlazorSQLiteDemo.Data;
+using Crudample.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,10 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+var connectionString = "Data Source=AppData/app.db";
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite("Data Source=app.db"));
-
-
+    options.UseSqlite(connectionString));
 
 var app = builder.Build();
 
@@ -33,9 +32,11 @@ if (!app.Environment.IsDevelopment())
 
 
 app.UseStaticFiles();
+app.UseRouting();
 app.UseAntiforgery();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
+
 
 app.Run();

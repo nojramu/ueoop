@@ -1,4 +1,4 @@
-namespace BlazorSQLiteDemo.Data
+namespace Crudample.Data
 {
     public class Student
     {
