@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "/workspaces/ueoop/Crudample/obj/Debug/net8.0/scopedcss/projectbundle/Crudample.bundle.scp.css",
+      "PackagePath": "staticwebassets/Crudample.bundle.scp.css"
+    },
+    {
+      "Id": "/workspaces/ueoop/Crudample/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Crudample.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.Crudample.props",
+      "PackagePath": "build\\Crudample.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Crudample.props",
+      "PackagePath": "buildMultiTargeting\\Crudample.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Crudample.props",
+      "PackagePath": "buildTransitive\\Crudample.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
