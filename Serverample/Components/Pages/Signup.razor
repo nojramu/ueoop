@@ -1,0 +1,62 @@
+@page "/signup"
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
+<h1>Sign Up</h1>
+
+<div class="login-form">
+    <label>
+        Username:
+        <input @bind="username" />
+    </label>
+    <br />
+    <label>
+        Email:
+        <input type="email" @bind="email" />
+    </label>
+    <br />
+    <label>
+        Password:
+        <input type="password" @bind="password" />
+    </label>
+    <br />
+    <label>
+        Confirm Password:
+        <input type="password" @bind="confirmPassword" />
+    </label>
+    <br />
+    <button @onclick="SignUp">Sign Up</button>
+    <button @onclick="BackToLogin">Back to Login</button>
+</div>
+
+@code {
+    private string username = string.Empty;
+    private string email = string.Empty;
+    private string password = string.Empty;
+    private string confirmPassword = string.Empty;
+
+    private void SignUp()
+    {
+        Console.WriteLine("SignUp button clicked");
+        if (password != confirmPassword)
+        {
+            // Handle password mismatch
+            Console.WriteLine("Passwords don't match");
+            return;
+        }
+        // Add signup logic here
+    }
+
+    private void BackToLogin()
+    {
+        Console.WriteLine("BackToLogin button clicked");
+        try
+        {
+            Navigation.NavigateTo("/", forceLoad: true);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Navigation error: {ex.Message}");
+        }
+    }
+}

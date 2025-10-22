@@ -1,0 +1,44 @@
+@page "/login"
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
+<h1>Login</h1>
+
+<div class="login-form">
+    <label>
+        Username:
+        <input @bind="username" />
+    </label>
+    <br />
+    <label>
+        Password:
+        <input type="password" @bind="password" />
+    </label>
+    <br />
+    <button @onclick="HandleLogin">Login</button>
+    <button @onclick="Signup">Sign Up</button>
+</div>
+
+@code {
+    private string username = string.Empty;
+    private string password = string.Empty;
+
+    private void HandleLogin()
+    {
+        // Add login logic here
+        Console.WriteLine("Login button clicked");
+    }
+
+    private void Signup()
+    {
+        Console.WriteLine("Signup button clicked");
+        try
+        {
+            Navigation.NavigateTo("/signup", forceLoad: true);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Navigation error: {ex.Message}");
+        }
+    }
+}

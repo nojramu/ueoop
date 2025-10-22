@@ -1,4 +1,11 @@
-namespace Crudample.Data
+namespace Serverample.Data
 {
-
+    // Add your entity models here
+    // Example:
+    // public class User
+    // {
+    //     public int Id { get; set; }
+    //     public string? Username { get; set; }
+    //     public string? Email { get; set; }
+    // }
 }
