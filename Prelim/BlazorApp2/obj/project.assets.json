@@ -1572,11 +1572,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/ueoop/BlazorApp2/BlazorApp2.csproj",
+      "projectUniqueName": "/workspaces/ueoop/Prelim/BlazorApp2/BlazorApp2.csproj",
       "projectName": "BlazorApp2",
-      "projectPath": "/workspaces/ueoop/BlazorApp2/BlazorApp2.csproj",
+      "projectPath": "/workspaces/ueoop/Prelim/BlazorApp2/BlazorApp2.csproj",
       "packagesPath": "/home/codespace/.nuget/packages/",
-      "outputPath": "/workspaces/ueoop/BlazorApp2/obj/",
+      "outputPath": "/workspaces/ueoop/Prelim/BlazorApp2/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/codespace/.nuget/NuGet/NuGet.Config"

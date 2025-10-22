@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/ueoop/ConsoleApp/ConsoleApp.csproj": {}
+    "/workspaces/ueoop/Prelim/ConsoleApp/ConsoleApp.csproj": {}
   },
   "projects": {
-    "/workspaces/ueoop/ConsoleApp/ConsoleApp.csproj": {
+    "/workspaces/ueoop/Prelim/ConsoleApp/ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/ueoop/ConsoleApp/ConsoleApp.csproj",
+        "projectUniqueName": "/workspaces/ueoop/Prelim/ConsoleApp/ConsoleApp.csproj",
         "projectName": "ConsoleApp",
-        "projectPath": "/workspaces/ueoop/ConsoleApp/ConsoleApp.csproj",
+        "projectPath": "/workspaces/ueoop/Prelim/ConsoleApp/ConsoleApp.csproj",
         "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/ueoop/ConsoleApp/obj/",
+        "outputPath": "/workspaces/ueoop/Prelim/ConsoleApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/codespace/.nuget/NuGet/NuGet.Config"

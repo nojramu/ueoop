@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "yD09I/6Hm8ZjWoykNWjhbh0MnKyzuDB+HrFsE4gGHX8=",
+  "Source": "Serverample",
+  "BasePath": "_content/Serverample",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Serverample/wwwroot",
+      "Source": "Serverample",
+      "ContentRoot": "/workspaces/ueoop/Serverample/wwwroot/",
+      "BasePath": "_content/Serverample",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/workspaces/ueoop/Serverample/obj/Debug/net8.0/scopedcss/bundle/Serverample.styles.css",
+      "SourceId": "Serverample",
+      "SourceType": "Computed",
+      "ContentRoot": "/workspaces/ueoop/Serverample/obj/Debug/net8.0/scopedcss/bundle/",
+      "BasePath": "_content/Serverample",
+      "RelativePath": "Serverample.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/workspaces/ueoop/Serverample/obj/Debug/net8.0/scopedcss/bundle/Serverample.styles.css"
+    },
+    {
+      "Identity": "/workspaces/ueoop/Serverample/obj/Debug/net8.0/scopedcss/projectbundle/Serverample.bundle.scp.css",
+      "SourceId": "Serverample",
+      "SourceType": "Computed",
+      "ContentRoot": "/workspaces/ueoop/Serverample/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "BasePath": "_content/Serverample",
+      "RelativePath": "Serverample.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/workspaces/ueoop/Serverample/obj/Debug/net8.0/scopedcss/projectbundle/Serverample.bundle.scp.css"
+    },
+    {
+      "Identity": "/workspaces/ueoop/Serverample/wwwroot/app.css",
+      "SourceId": "Serverample",
+      "SourceType": "Discovered",
+      "ContentRoot": "/workspaces/ueoop/Serverample/wwwroot/",
+      "BasePath": "_content/Serverample",
+      "RelativePath": "app.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/app.css"
+    }
+  ]
+}

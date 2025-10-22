@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/ueoop/OOPConsole/OOPConsole.csproj": {}
+    "/workspaces/ueoop/Midterm/OOPConsole/OOPConsole.csproj": {}
   },
   "projects": {
-    "/workspaces/ueoop/OOPConsole/OOPConsole.csproj": {
+    "/workspaces/ueoop/Midterm/OOPConsole/OOPConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/ueoop/OOPConsole/OOPConsole.csproj",
+        "projectUniqueName": "/workspaces/ueoop/Midterm/OOPConsole/OOPConsole.csproj",
         "projectName": "OOPConsole",
-        "projectPath": "/workspaces/ueoop/OOPConsole/OOPConsole.csproj",
+        "projectPath": "/workspaces/ueoop/Midterm/OOPConsole/OOPConsole.csproj",
         "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/ueoop/OOPConsole/obj/",
+        "outputPath": "/workspaces/ueoop/Midterm/OOPConsole/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/codespace/.nuget/NuGet/NuGet.Config"

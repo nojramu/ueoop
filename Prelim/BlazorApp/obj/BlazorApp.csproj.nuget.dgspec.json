@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/ueoop/BlazorApp/BlazorApp.csproj": {}
+    "/workspaces/ueoop/Prelim/BlazorApp/BlazorApp.csproj": {}
   },
   "projects": {
-    "/workspaces/ueoop/BlazorApp/BlazorApp.csproj": {
+    "/workspaces/ueoop/Prelim/BlazorApp/BlazorApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/ueoop/BlazorApp/BlazorApp.csproj",
+        "projectUniqueName": "/workspaces/ueoop/Prelim/BlazorApp/BlazorApp.csproj",
         "projectName": "BlazorApp",
-        "projectPath": "/workspaces/ueoop/BlazorApp/BlazorApp.csproj",
+        "projectPath": "/workspaces/ueoop/Prelim/BlazorApp/BlazorApp.csproj",
         "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/ueoop/BlazorApp/obj/",
+        "outputPath": "/workspaces/ueoop/Prelim/BlazorApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/codespace/.nuget/NuGet/NuGet.Config"

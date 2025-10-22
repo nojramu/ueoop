@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c+T45grPDE4=",
+  "dgSpecHash": "c0nmS8jMqsw=",
   "success": true,
-  "projectFilePath": "/workspaces/ueoop/BlazorApp/BlazorApp.csproj",
+  "projectFilePath": "/workspaces/ueoop/Prelim/BlazorApp/BlazorApp.csproj",
   "expectedPackageFiles": [
     "/home/codespace/.nuget/packages/microsoft.aspnetcore.authorization/8.0.18/microsoft.aspnetcore.authorization.8.0.18.nupkg.sha512",
     "/home/codespace/.nuget/packages/microsoft.aspnetcore.components/8.0.18/microsoft.aspnetcore.components.8.0.18.nupkg.sha512",

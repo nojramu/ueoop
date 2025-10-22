@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/ueoop/OOPConsole3/OOPConsole3.csproj",
+      "projectUniqueName": "/workspaces/ueoop/Midterm/OOPConsole3/OOPConsole3.csproj",
       "projectName": "OOPConsole3",
-      "projectPath": "/workspaces/ueoop/OOPConsole3/OOPConsole3.csproj",
+      "projectPath": "/workspaces/ueoop/Midterm/OOPConsole3/OOPConsole3.csproj",
       "packagesPath": "/home/codespace/.nuget/packages/",
-      "outputPath": "/workspaces/ueoop/OOPConsole3/obj/",
+      "outputPath": "/workspaces/ueoop/Midterm/OOPConsole3/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/codespace/.nuget/NuGet/NuGet.Config"

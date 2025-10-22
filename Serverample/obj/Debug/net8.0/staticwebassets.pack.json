@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "/workspaces/ueoop/Serverample/obj/Debug/net8.0/scopedcss/projectbundle/Serverample.bundle.scp.css",
+      "PackagePath": "staticwebassets/Serverample.bundle.scp.css"
+    },
+    {
+      "Id": "/workspaces/ueoop/Serverample/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Serverample.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.Serverample.props",
+      "PackagePath": "build\\Serverample.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Serverample.props",
+      "PackagePath": "buildMultiTargeting\\Serverample.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Serverample.props",
+      "PackagePath": "buildTransitive\\Serverample.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
