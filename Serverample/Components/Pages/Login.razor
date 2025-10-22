@@ -1,32 +1,130 @@
-@page "/login"
+@page "/"
 @inject NavigationManager Navigation
+@inject Serverample.Services.AuthService AuthService
 @rendermode InteractiveServer
 
 <h1>Login</h1>
 
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger">
+        @errorMessage
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(successMessage))
+{
+    <div class="alert alert-success">
+        @successMessage
+    </div>
+}
+
 <div class="login-form">
     <label>
         Username:
-        <input @bind="username" />
+        <input @bind="username" @bind:event="oninput" class="@GetInputClass(usernameValid)" placeholder="Enter your username" />
+        @if (!usernameValid && !string.IsNullOrEmpty(username))
+        {
+            <small class="text-danger">Username is required</small>
+        }
     </label>
     <br />
     <label>
         Password:
-        <input type="password" @bind="password" />
+        <input type="password" @bind="password" @bind:event="oninput" class="@GetInputClass(passwordValid)" placeholder="Enter your password" />
+        @if (!passwordValid && !string.IsNullOrEmpty(password))
+        {
+            <small class="text-danger">Password is required</small>
+        }
     </label>
     <br />
-    <button @onclick="HandleLogin">Login</button>
-    <button @onclick="Signup">Sign Up</button>
+    <button @onclick="HandleLogin" disabled="@(!IsFormValid() || isLoading)" class="btn btn-primary">
+        @if (isLoading)
+        {
+            <span>Signing in...</span>
+        }
+        else
+        {
+            <span>Login</span>
+        }
+    </button>
+    <button @onclick="Signup" class="btn btn-secondary">Sign Up</button>
 </div>
 
 @code {
     private string username = string.Empty;
     private string password = string.Empty;
+    private string errorMessage = string.Empty;
+    private string successMessage = string.Empty;
+    private bool isLoading = false;
 
-    private void HandleLogin()
+    private bool usernameValid => !string.IsNullOrWhiteSpace(username);
+    private bool passwordValid => !string.IsNullOrWhiteSpace(password);
+
+    private bool IsFormValid()
     {
-        // Add login logic here
-        Console.WriteLine("Login button clicked");
+        return usernameValid && passwordValid;
+    }
+
+    private string GetInputClass(bool isValid)
+    {
+        if (string.IsNullOrEmpty(username) && string.IsNullOrEmpty(password))
+            return "form-control";
+        
+        return isValid ? "form-control is-valid" : "form-control is-invalid";
+    }
+
+    private async Task HandleLogin()
+    {
+        try
+        {
+            isLoading = true;
+            errorMessage = string.Empty;
+            successMessage = string.Empty;
+            StateHasChanged();
+
+            Console.WriteLine("Login button clicked");
+
+            if (!IsFormValid())
+            {
+                errorMessage = "Please enter both username and password.";
+                return;
+            }
+
+            // Authenticate user using AuthService
+            var user = await AuthService.LoginUserAsync(username, password);
+
+            if (user != null)
+            {
+                successMessage = $"Welcome back, {user.Username}! Login successful.";
+                Console.WriteLine($"User {user.Username} logged in successfully");
+                
+                // Clear form
+                username = string.Empty;
+                password = string.Empty;
+                
+                StateHasChanged();
+                
+                // Here you could redirect to a dashboard or home page
+                // await Task.Delay(1500);
+                // Navigation.NavigateTo("/dashboard", forceLoad: true);
+            }
+            else
+            {
+                errorMessage = "Invalid username or password. Please try again.";
+                Console.WriteLine("Login failed: Invalid credentials");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Login error: {ex.Message}");
+            errorMessage = "An error occurred during login. Please try again.";
+        }
+        finally
+        {
+            isLoading = false;
+            StateHasChanged();
+        }
     }
 
     private void Signup()

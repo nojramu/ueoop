@@ -1,5 +1,6 @@
 using Serverample.Components;
 using Serverample.Data;
+using Serverample.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,9 @@ builder.Services.AddRazorComponents()
 var connectionString = "Data Source=AppData/app.db";
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(connectionString));
+
+// Register the AuthService
+builder.Services.AddScoped<AuthService>();
 
 var app = builder.Build();
 

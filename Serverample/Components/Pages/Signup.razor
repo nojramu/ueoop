@@ -1,32 +1,72 @@
 @page "/signup"
 @inject NavigationManager Navigation
+@inject Serverample.Services.AuthService AuthService
 @rendermode InteractiveServer
 
 <h1>Sign Up</h1>
 
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger">
+        @errorMessage
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(successMessage))
+{
+    <div class="alert alert-success">
+        @successMessage
+    </div>
+}
+
 <div class="login-form">
     <label>
         Username:
-        <input @bind="username" />
+        <input @bind="username" @bind:event="oninput" class="@GetInputClass(usernameValid)" />
+        @if (!usernameValid && !string.IsNullOrEmpty(username))
+        {
+            <small class="text-danger">Username must be at least 3 characters</small>
+        }
     </label>
     <br />
     <label>
         Email:
-        <input type="email" @bind="email" />
+        <input type="email" @bind="email" @bind:event="oninput" class="@GetInputClass(emailValid)" />
+        @if (!emailValid && !string.IsNullOrEmpty(email))
+        {
+            <small class="text-danger">Please enter a valid email</small>
+        }
     </label>
     <br />
     <label>
         Password:
-        <input type="password" @bind="password" />
+        <input type="password" @bind="password" @bind:event="oninput" class="@GetInputClass(passwordValid)" />
+        @if (!passwordValid && !string.IsNullOrEmpty(password))
+        {
+            <small class="text-danger">Password must be at least 6 characters</small>
+        }
     </label>
     <br />
     <label>
         Confirm Password:
-        <input type="password" @bind="confirmPassword" />
+        <input type="password" @bind="confirmPassword" @bind:event="oninput" class="@GetInputClass(confirmPasswordValid)" />
+        @if (!confirmPasswordValid && !string.IsNullOrEmpty(confirmPassword))
+        {
+            <small class="text-danger">Passwords do not match</small>
+        }
     </label>
     <br />
-    <button @onclick="SignUp">Sign Up</button>
-    <button @onclick="BackToLogin">Back to Login</button>
+    <button @onclick="SignUp" disabled="@(!IsFormValid() || isLoading)" class="btn btn-primary">
+        @if (isLoading)
+        {
+            <span>Creating Account...</span>
+        }
+        else
+        {
+            <span>Sign Up</span>
+        }
+    </button>
+    <button @onclick="BackToLogin" class="btn btn-secondary">Back to Login</button>
 </div>
 
 @code {
@@ -34,17 +74,79 @@
     private string email = string.Empty;
     private string password = string.Empty;
     private string confirmPassword = string.Empty;
+    private string errorMessage = string.Empty;
+    private string successMessage = string.Empty;
+    private bool isLoading = false;
 
-    private void SignUp()
+    private bool usernameValid => username.Length >= 3;
+    private bool emailValid => !string.IsNullOrEmpty(email) && email.Contains("@") && email.Contains(".");
+    private bool passwordValid => password.Length >= 6;
+    private bool confirmPasswordValid => !string.IsNullOrEmpty(confirmPassword) && password == confirmPassword;
+
+    private bool IsFormValid()
     {
-        Console.WriteLine("SignUp button clicked");
-        if (password != confirmPassword)
+        return usernameValid && emailValid && passwordValid && confirmPasswordValid;
+    }
+
+    private string GetInputClass(bool isValid)
+    {
+        if (string.IsNullOrEmpty(username) && string.IsNullOrEmpty(email) && 
+            string.IsNullOrEmpty(password) && string.IsNullOrEmpty(confirmPassword))
+            return "form-control";
+        
+        return isValid ? "form-control is-valid" : "form-control is-invalid";
+    }
+
+    private async Task SignUp()
+    {
+        try
         {
-            // Handle password mismatch
-            Console.WriteLine("Passwords don't match");
-            return;
+            isLoading = true;
+            errorMessage = string.Empty;
+            successMessage = string.Empty;
+            StateHasChanged();
+
+            Console.WriteLine("SignUp button clicked");
+            
+            if (!IsFormValid())
+            {
+                errorMessage = "Please fill in all fields correctly.";
+                return;
+            }
+
+            // Register user using AuthService
+            var registrationSuccess = await AuthService.RegisterUserAsync(username, email, password);
+
+            if (registrationSuccess)
+            {
+                successMessage = "Account created successfully! Redirecting to login...";
+                StateHasChanged();
+                
+                // Clear form
+                username = string.Empty;
+                email = string.Empty;
+                password = string.Empty;
+                confirmPassword = string.Empty;
+
+                // Redirect to login after 2 seconds
+                await Task.Delay(2000);
+                Navigation.NavigateTo("/", forceLoad: true);
+            }
+            else
+            {
+                errorMessage = "Username or email already exists. Please try different credentials.";
+            }
         }
-        // Add signup logic here
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Signup error: {ex.Message}");
+            errorMessage = "An error occurred during registration. Please try again.";
+        }
+        finally
+        {
+            isLoading = false;
+            StateHasChanged();
+        }
     }
 
     private void BackToLogin()
